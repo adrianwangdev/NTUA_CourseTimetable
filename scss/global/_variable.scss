@@ -1,0 +1,41 @@
+/* --- Color System --- */
+$color-brand: #003979;
+$color-primary: #2C3E50;
+$color-CTA: #F3982D;
+$color-CTA-hoevr: #EE7700;
+$color-btn-footer: #FFE5B2;
+
+$color-headerBG: rgba(255, 255, 255, .87);
+$color-sectionBG: rgba(104, 134, 169, .08);
+$color-black6: rgba(0, 0, 0, .06);
+$color-black12: rgba(0, 0, 0, .12);
+$color-black24: rgba(0, 0, 0, .24);
+$color-black32: rgba(0, 0, 0, .32);
+$color-black54: rgba(0, 0, 0, .54);
+$color-black70: rgba(0, 0, 0, .70);
+$color-white12: rgba(255, 255, 255, .12);
+$color-white32: rgba(255, 255, 255, .32);
+$color-white70: rgba(255, 255, 255, .70);
+$color-white87: rgba(255, 255, 255, .87);
+
+/* --- Shadow System --- */
+$shadow-sm: 0 4px 8px rgba(0, 0, 0, .12);
+$shadow-lg: 0 6px 12px rgba(0, 0, 0, .12);
+
+/* --- Type System --- */
+$text-16px: .85em;
+$text-18px: .95em;
+$text-20px: 1.1em;
+$text-24px: 1.27em;
+$text-28px: 1.48em;
+$text-52px: 2.6em;
+$text-56px: 3em;
+
+/* --- Screen Break Point --- */
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1200px;
+
+/* -------------------------- */
+$lesson-height: 88px;

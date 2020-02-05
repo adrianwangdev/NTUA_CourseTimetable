@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/* --- Color System --- */
+/* --- Shadow System --- */
+/* --- Type System --- */
+/* --- Screen Break Point --- */
+/* -------------------------- */
+* {
+  position: relative;
+}
+
+body {
+  font-family: '微軟正黑體', sans-serif;
+  background-image: url("../images/nasaTest5.png");
+  backgroung-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, hr {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* ------------------------------------------------------- */
+.owl-carousel {
+  text-align: center;
+}
+
+.owl-dots {
+  bottom: 40px;
+}
+
+.owl-dots button.owl-dot {
+  display: inline-block;
+  margin: 4px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+@media (max-width: 480px) {
+  .owl-dots button.owl-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.owl-dots button.owl-dot.active {
+  background: white;
+}
+
+/* ------------------------------------------------------- */
+.curriculum {
+  margin-top: -22px;
+}
+
+.fixed-area {
+  position: fixed;
+}
+
+/* ------------------------------------------------------- */
+.classroom-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.54);
+}
+
+.classroom-title .classroom {
+  padding: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .classroom-title .classroom {
+    display: none;
+  }
+}
+
+.classroom-title .classroom:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.classroom-title .classroom.classroom-first {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .classroom-title .classroom.classroom-first {
+    -webkit-flex-basis: 24%;
+        -ms-flex-preferred-size: 24%;
+            flex-basis: 24%;
+  }
+}
+
+@media (max-width: 480px) {
+  .classroom-title .classroom.classroom-first {
+    -webkit-flex-basis: 36%;
+        -ms-flex-preferred-size: 36%;
+            flex-basis: 36%;
+  }
+}
+
+.classroom-title .classroom.software {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .classroom-title .classroom.mobileShow {
+    display: block;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.classroom-title .classroom p, .classroom-title .classroom span, .classroom-title .classroom .app-icon {
+  display: inline-block;
+}
+
+.classroom-title .classroom p, .classroom-title .classroom span {
+  vertical-align: middle;
+}
+
+.classroom-title .classroom span {
+  font-size: .8em;
+}
+
+.classroom-title .classroom .app-icon {
+  width: 28px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+  .classroom-title .classroom .app-icon {
+    width: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .classroom-title .classroom .app-icon {
+    margin-bottom: 2px;
+    width: 24px;
+  }
+}
+
+.date-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.date-title time.date {
+  padding: 4px 0 4px 16px;
+}
+
+.date-title p {
+  display: inline-block;
+}
+
+.course-detail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.course-detail .course-detial-side {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.course-detail .course-detial-side.side-classroom {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .course-detail .course-detial-side.side-classroom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: 24%;
+        -ms-flex-preferred-size: 24%;
+            flex-basis: 24%;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-detail .course-detial-side.side-classroom {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-detail .course-detial-side {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-detail .course-detial-side.mobileShow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 0;
+  }
+}
+
+.course-detail .course-detial-side > div {
+  width: 100%;
+}
+
+.course-detail .course-number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 16px;
+  text-align: right;
+}
+
+.course-detail .course-number p {
+  margin: 16px 0;
+  padding-top: 4px;
+  height: 56px;
+  font-size: 2em;
+}
+
+.course-detail .course-time {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.course-detail .course-time .time {
+  margin: 16px 0;
+  height: 56px;
+  text-align: center;
+  font-size: .8em;
+}
+
+.lesson1, .lesson2, .lesson3, .lesson4, .lesson5, .lesson6, .lesson7, .lesson8, .lesson9, .lesson10, .lesson11, .lesson12, .lesson13, .lesson14 {
+  text-align: center;
+}
+
+.lesson1.on, .lesson2.on, .lesson3.on, .lesson4.on, .lesson5.on, .lesson6.on, .lesson7.on, .lesson8.on, .lesson9.on, .lesson10.on, .lesson11.on, .lesson12.on, .lesson13.on, .lesson14.on {
+  background: rgba(0, 0, 0, 0.54);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.lesson1 .vertical-center, .lesson2 .vertical-center, .lesson3 .vertical-center, .lesson4 .vertical-center, .lesson5 .vertical-center, .lesson6 .vertical-center, .lesson7 .vertical-center, .lesson8 .vertical-center, .lesson9 .vertical-center, .lesson10 .vertical-center, .lesson11 .vertical-center, .lesson12 .vertical-center, .lesson13 .vertical-center, .lesson14 .vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.lesson1 .lesson-text, .lesson2 .lesson-text, .lesson3 .lesson-text, .lesson4 .lesson-text, .lesson5 .lesson-text, .lesson6 .lesson-text, .lesson7 .lesson-text, .lesson8 .lesson-text, .lesson9 .lesson-text, .lesson10 .lesson-text, .lesson11 .lesson-text, .lesson12 .lesson-text, .lesson13 .lesson-text, .lesson14 .lesson-text {
+  margin-bottom: 4px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media (max-width: 1024px) {
+  .lesson1 .lesson-text, .lesson2 .lesson-text, .lesson3 .lesson-text, .lesson4 .lesson-text, .lesson5 .lesson-text, .lesson6 .lesson-text, .lesson7 .lesson-text, .lesson8 .lesson-text, .lesson9 .lesson-text, .lesson10 .lesson-text, .lesson11 .lesson-text, .lesson12 .lesson-text, .lesson13 .lesson-text, .lesson14 .lesson-text {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .lesson1 .lesson-text, .lesson2 .lesson-text, .lesson3 .lesson-text, .lesson4 .lesson-text, .lesson5 .lesson-text, .lesson6 .lesson-text, .lesson7 .lesson-text, .lesson8 .lesson-text, .lesson9 .lesson-text, .lesson10 .lesson-text, .lesson11 .lesson-text, .lesson12 .lesson-text, .lesson13 .lesson-text, .lesson14 .lesson-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .lesson1 .lesson-text, .lesson2 .lesson-text, .lesson3 .lesson-text, .lesson4 .lesson-text, .lesson5 .lesson-text, .lesson6 .lesson-text, .lesson7 .lesson-text, .lesson8 .lesson-text, .lesson9 .lesson-text, .lesson10 .lesson-text, .lesson11 .lesson-text, .lesson12 .lesson-text, .lesson13 .lesson-text, .lesson14 .lesson-text {
+    font-size: .9em;
+  }
+}
+
+.lesson1 .lesson-name, .lesson1 .lesson-extra, .lesson2 .lesson-name, .lesson2 .lesson-extra, .lesson3 .lesson-name, .lesson3 .lesson-extra, .lesson4 .lesson-name, .lesson4 .lesson-extra, .lesson5 .lesson-name, .lesson5 .lesson-extra, .lesson6 .lesson-name, .lesson6 .lesson-extra, .lesson7 .lesson-name, .lesson7 .lesson-extra, .lesson8 .lesson-name, .lesson8 .lesson-extra, .lesson9 .lesson-name, .lesson9 .lesson-extra, .lesson10 .lesson-name, .lesson10 .lesson-extra, .lesson11 .lesson-name, .lesson11 .lesson-extra, .lesson12 .lesson-name, .lesson12 .lesson-extra, .lesson13 .lesson-name, .lesson13 .lesson-extra, .lesson14 .lesson-name, .lesson14 .lesson-extra {
+  font-size: .8em;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .lesson1 .lesson-name, .lesson1 .lesson-extra, .lesson2 .lesson-name, .lesson2 .lesson-extra, .lesson3 .lesson-name, .lesson3 .lesson-extra, .lesson4 .lesson-name, .lesson4 .lesson-extra, .lesson5 .lesson-name, .lesson5 .lesson-extra, .lesson6 .lesson-name, .lesson6 .lesson-extra, .lesson7 .lesson-name, .lesson7 .lesson-extra, .lesson8 .lesson-name, .lesson8 .lesson-extra, .lesson9 .lesson-name, .lesson9 .lesson-extra, .lesson10 .lesson-name, .lesson10 .lesson-extra, .lesson11 .lesson-name, .lesson11 .lesson-extra, .lesson12 .lesson-name, .lesson12 .lesson-extra, .lesson13 .lesson-name, .lesson13 .lesson-extra, .lesson14 .lesson-name, .lesson14 .lesson-extra {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .lesson1 .lesson-name, .lesson1 .lesson-extra, .lesson2 .lesson-name, .lesson2 .lesson-extra, .lesson3 .lesson-name, .lesson3 .lesson-extra, .lesson4 .lesson-name, .lesson4 .lesson-extra, .lesson5 .lesson-name, .lesson5 .lesson-extra, .lesson6 .lesson-name, .lesson6 .lesson-extra, .lesson7 .lesson-name, .lesson7 .lesson-extra, .lesson8 .lesson-name, .lesson8 .lesson-extra, .lesson9 .lesson-name, .lesson9 .lesson-extra, .lesson10 .lesson-name, .lesson10 .lesson-extra, .lesson11 .lesson-name, .lesson11 .lesson-extra, .lesson12 .lesson-name, .lesson12 .lesson-extra, .lesson13 .lesson-name, .lesson13 .lesson-extra, .lesson14 .lesson-name, .lesson14 .lesson-extra {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .lesson1 .lesson-name, .lesson1 .lesson-extra, .lesson2 .lesson-name, .lesson2 .lesson-extra, .lesson3 .lesson-name, .lesson3 .lesson-extra, .lesson4 .lesson-name, .lesson4 .lesson-extra, .lesson5 .lesson-name, .lesson5 .lesson-extra, .lesson6 .lesson-name, .lesson6 .lesson-extra, .lesson7 .lesson-name, .lesson7 .lesson-extra, .lesson8 .lesson-name, .lesson8 .lesson-extra, .lesson9 .lesson-name, .lesson9 .lesson-extra, .lesson10 .lesson-name, .lesson10 .lesson-extra, .lesson11 .lesson-name, .lesson11 .lesson-extra, .lesson12 .lesson-name, .lesson12 .lesson-extra, .lesson13 .lesson-name, .lesson13 .lesson-extra, .lesson14 .lesson-name, .lesson14 .lesson-extra {
+    font-size: .8em;
+  }
+}
+
+.lesson1 {
+  height: 88px;
+}
+
+.lesson2 {
+  height: 176px;
+}
+
+.lesson3 {
+  height: 264px;
+}
+
+.lesson4 {
+  height: 352px;
+}
+
+.lesson5 {
+  height: 440px;
+}
+
+.lesson6 {
+  height: 528px;
+}
+
+.lesson7 {
+  height: 616px;
+}
+
+.lesson8 {
+  height: 704px;
+}
+
+.lesson9 {
+  height: 792px;
+}
+
+.lesson10 {
+  height: 880px;
+}
+
+.lesson11 {
+  height: 968px;
+}
+
+.lesson12 {
+  height: 1056px;
+}
+
+.lesson13 {
+  height: 1144px;
+}
+
+.lesson14 {
+  height: 1232px;
+}
+/*# sourceMappingURL=style.css.map */

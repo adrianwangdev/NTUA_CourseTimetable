@@ -1,0 +1,410 @@
+* {
+  position: relative;
+}
+
+body {
+  font-family: '微軟正黑體', sans-serif;
+  background-image: url('../images/nasaTest5.png');
+  backgroung-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, hr {
+  margin: 0;
+  padding: 0;
+}
+
+// h1.title, h2.subtitle {
+//   color: $color-primary;
+// }
+
+// h3.title {
+//   font-size: $text-28px;
+// }
+
+a {
+  transition: all .4s;
+
+  &:link, &:visited, &:active, &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+// i {
+//   font-family: fontello;
+// }
+
+// .wrapper {
+//   overflow: hidden;
+// }
+
+// .btn {
+//   display: inline-block;
+//   padding: 8px 48px;
+//   border: 1px solid $color-black54;
+//   border-radius: 24px;
+//   top: 0;
+//   color: $color-black70;
+
+//   @media (max-width: $screen-sm) {
+//     padding: 8px 40px;
+//   }
+//   @media (max-width: $screen-xs) {
+//     padding: 8px 16px;
+//   }
+
+//   &.btn-border-footer {
+//     border: 1px solid $color-btn-footer;
+//     &:link, &:visited, &:active {
+//       color: $color-btn-footer;
+//     }
+//     &:hover {
+//       color: $color-primary;
+//       background: $color-btn-footer;
+//     }
+//   }
+
+//   &.btn-border-CTA {
+//     border: 1px solid $color-CTA;
+//     &:link, &:visited, &:active {
+//       color: $color-CTA;
+//     }
+//     &:hover {
+//       color: white;
+//       background: $color-CTA;
+//     }
+//   }
+
+//   &.btn-CTA {
+//     border: none;
+//     background: $color-CTA;
+
+//     &:link, &:visited, &:active {
+//       color: white;
+//     }
+//     &:hover {
+//       color: white;
+//       background: $color-CTA-hoevr;
+//     }
+//   }
+
+//   &.btn-lg {
+//     padding: 16px 64px;
+//     font-size: $text-20px;
+//     border-radius: 32px;
+//     letter-spacing: 1px;
+    
+//     @media (max-width: $screen-sm) {
+//       padding: 12px 64px;
+//     }
+//     @media (max-width: $screen-xs) {
+//       padding: 8px 64px;
+//     }
+//   }
+// }
+
+// .section-top {
+//   text-align: center;
+
+//   .title {
+//     font-weight: 300;
+//     color: $color-primary;
+//   }
+
+//   hr {
+//     margin: 32px auto;
+//     width: 80px;
+//     border-top-color: $color-black32;
+
+//     @media (max-width: $screen-sm) {
+//       margin-top: 16px;
+//       width: 40px;
+//     }
+//   }
+// }
+
+/* ------------------------------------------------------- */
+
+.owl-carousel {
+  // for owl-dots
+  text-align: center;
+}
+
+.owl-dots {
+  // margin-bottom: 24px;
+  bottom: 40px;
+
+  button.owl-dot {
+    
+    display: inline-block;
+    margin: 4px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: $color-white32;
+
+    @media (max-width: $screen-xs) {
+      width: 8px;
+      height: 8px;
+    }
+    
+    &.active {
+      background: white;
+    }
+  }
+}
+
+/* ------------------------------------------------------- */
+
+.curriculum {
+  margin-top: -22px;
+}
+
+.fixed-area {
+  position: fixed;
+
+}
+
+/* ------------------------------------------------------- */
+
+.classroom-title {
+  display: flex;
+  border-bottom: 1px solid $color-white12;
+  color: $color-white70;
+  background: $color-black54;
+
+  .classroom {
+    padding: 8px;
+    border-right: 1px solid $color-white12;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid $color-white12;
+    }
+
+    &.classroom-first {
+      align-self: center;
+      border-right: none;
+
+      @media (max-width: $screen-sm) {
+        flex-basis: 24%;
+      }
+      @media (max-width: $screen-xs) {
+        flex-basis: 36%;
+      }
+    }
+
+    &.software {
+      text-align: left;
+    }
+
+    &.mobileShow {
+
+      @media (max-width: $screen-sm) {
+        display: block;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+
+    p, span, .app-icon {
+      display: inline-block;
+    }
+
+    p, span {
+      vertical-align: middle;
+    }
+
+    span {
+      font-size: .8em;
+    }
+    
+    .app-icon {
+      width: 28px;
+      margin-bottom: 4px;
+
+      @media (max-width: $screen-md) {
+        width: 16px;
+      }
+      @media (max-width: $screen-sm) {
+        margin-bottom: 2px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+
+
+
+.date-title {
+  display: flex;
+  color: $color-white87;
+
+  time.date {
+    padding: 4px 0 4px 16px;
+  }
+
+  p {
+    display: inline-block;
+  }
+}
+
+
+
+
+.course-detail {
+  display: flex;
+  color: $color-white87;
+
+  .course-detial-side {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $color-white12;
+    width: 100%;
+    background: $color-white12;
+
+    &.side-classroom {
+      flex-direction: row;
+      background: transparent;
+      
+      @media (max-width: $screen-sm) {
+        display: flex;
+        flex-basis: 24%;
+      }
+      @media (max-width: $screen-xs) {
+        flex-basis: 48%;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+
+    &.mobileShow {
+
+      @media (max-width: $screen-sm) {
+        display: flex;
+        border: 0;
+      }
+    }
+
+    & > div {
+      width: 100%;
+      // border: 1px solid red;
+    }
+  }
+
+  .course-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 16px;
+    text-align: right;
+    
+    p {
+      // border: 1px solid blue;
+      margin: 16px 0;
+      padding-top: 4px;
+      height: 56px;
+      font-size: 2em;
+    }
+  }
+
+  .course-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .time {
+      // border: 1px solid green;
+      margin: 16px 0;
+      height: 56px;
+      text-align: center;
+      font-size: .8em;
+    }
+  }
+  
+}
+
+
+
+
+.lesson1, .lesson2, .lesson3, .lesson4, .lesson5, .lesson6, .lesson7, .lesson8, .lesson9, .lesson10, .lesson11, .lesson12, .lesson13, .lesson14 {
+  text-align: center;
+  
+  &.on {
+    background: $color-black54;
+    border-bottom: 1px solid $color-white12;
+  }
+
+  .vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .lesson-text {
+    margin-bottom: 4px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: $color-white87;
+
+    @media (max-width: $screen-md) {
+      font-size: .9em;
+    }
+    @media (max-width: $screen-sm) {
+      font-size: 1em;
+    }
+    @media (max-width: $screen-xs) {
+      font-size: .9em;
+    }
+  }
+
+  .lesson-name, .lesson-extra {
+    font-size: .8em;
+    line-height: 1.6;
+    color: $color-white70;
+
+    @media (max-width: $screen-md) {
+      font-size: .7em;
+    }
+    @media (max-width: $screen-sm) {
+      font-size: .8em;
+    }
+    @media (max-width: $screen-xs) {
+      font-size: .8em;
+    }
+  }
+}
+.lesson1 { height: $lesson-height; }
+.lesson2 { height: $lesson-height * 2; }
+.lesson3 { height: $lesson-height * 3; }
+.lesson4 { height: $lesson-height * 4; }
+.lesson5 { height: $lesson-height * 5; }
+.lesson6 { height: $lesson-height * 6; }
+.lesson7 { height: $lesson-height * 7; }
+.lesson8 { height: $lesson-height * 8; }
+.lesson9 { height: $lesson-height * 9; }
+.lesson10 { height: $lesson-height * 10; }
+.lesson11 { height: $lesson-height * 11; }
+.lesson12 { height: $lesson-height * 12; }
+.lesson13 { height: $lesson-height * 13; }
+.lesson14 { height: $lesson-height * 14; }
