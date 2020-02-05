@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, hr {
 // }
 
 a {
+  color: $color-white70;
   transition: all .4s;
 
   &:link, &:visited, &:active, &:hover {
@@ -37,11 +38,14 @@ a {
   &:focus {
     outline: none;
   }
+  &:hover {
+    color: white;
+  }
 }
 
-// i {
-//   font-family: fontello;
-// }
+i {
+  font-family: fontello;
+}
 
 // .wrapper {
 //   overflow: hidden;
@@ -408,3 +412,32 @@ a {
 .lesson12 { height: $lesson-height * 12; }
 .lesson13 { height: $lesson-height * 13; }
 .lesson14 { height: $lesson-height * 14; }
+
+
+.prevClassroom,
+.nextClassroom,
+.softwareHelp {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-52%);
+  padding: 4px;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+}
+
+.prevClassroom {
+  left: 16px;
+}
+.nextClassroom, .softwareHelp {
+  right: 16px;
+}
+.softwareHelp {
+  font-size: 1.2em;
+}
+.dateChoose {
+  padding: 4px;
+  bottom: 2px;
+}
