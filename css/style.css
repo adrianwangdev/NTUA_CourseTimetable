@@ -478,4 +478,79 @@ i {
   padding: 4px;
   bottom: 2px;
 }
+
+.icon-desc {
+  padding: 0 32px;
+  background: rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.24);
+}
+
+.icon-desc h3 {
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-desc .title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 1em;
+}
+
+.icon-desc .os {
+  float: left;
+  width: 16%;
+}
+
+.icon-desc .hardware {
+  float: left;
+  width: 16%;
+}
+
+.icon-desc .software {
+  float: right;
+  width: 68%;
+}
+
+.icon-desc .icon-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .icon-desc .icon-item {
+    width: 36%;
+  }
+}
+
+.icon-desc .icon-img {
+  width: 28px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+  .icon-desc .icon-img {
+    width: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-desc .icon-img {
+    margin-bottom: 2px;
+    width: 24px;
+  }
+}
+
+.icon-desc .icon-info {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.54);
+  vertical-align: top;
+}
+
+.software .icon-item {
+  width: 16%;
+}
 /*# sourceMappingURL=style.css.map */

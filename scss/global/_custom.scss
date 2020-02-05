@@ -441,3 +441,67 @@ i {
   padding: 4px;
   bottom: 2px;
 }
+
+.icon-desc {
+  padding: 0 32px;
+  background: $color-black54;
+  box-shadow: 0 -2px 6px $color-black24;
+
+  h3 {
+    font-size: 1.1em;
+    color: $color-white70;
+  }
+  .title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: $color-white54;
+    font-size: 1em;
+  }
+  .os {
+    float: left;
+    width: 16%;
+  }
+  .hardware {
+    float: left;
+    width: 16%;
+  }
+  .software {
+    float: right;
+    width: 68%;
+  }
+
+  .icon-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+
+    @media (max-width: $screen-sm) {
+      width: 36%;
+    }
+  }
+  .icon-img {
+    width: 28px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+
+    @media (max-width: $screen-md) {
+      width: 16px;
+    }
+    @media (max-width: $screen-sm) {
+      margin-bottom: 2px;
+      width: 24px;
+    }
+  }
+  .icon-info {
+    display: inline-block;
+    color: $color-white54;
+    vertical-align: top;
+  }
+}
+
+.software {
+
+  .icon-item {
+    width: 16%;
+  }
+}
