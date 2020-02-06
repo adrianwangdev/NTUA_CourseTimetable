@@ -181,6 +181,17 @@ i {
 
 /* ------------------------------------------------------- */
 
+.mouse-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: $color-line;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+}
+
 .classroom-title {
   display: flex;
   border-bottom: 1px solid $color-white12;
