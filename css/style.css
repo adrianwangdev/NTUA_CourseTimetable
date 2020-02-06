@@ -93,7 +93,7 @@ i {
   position: absolute;
   width: 100%;
   height: 1px;
-  background: #ec4166;
+  background: #EC4166;
 }
 
 @media (max-width: 768px) {
@@ -499,9 +499,28 @@ i {
           box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.24);
 }
 
+@media (max-width: 768px) {
+  .icon-desc {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background: #092131;
+    -webkit-box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.32);
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.32);
+  }
+}
+
 .icon-desc h3 {
   font-size: 1.1em;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+  .icon-desc h3 {
+    padding-bottom: 16px;
+  }
 }
 
 .icon-desc .title {
@@ -521,9 +540,48 @@ i {
   width: 16%;
 }
 
+@media (max-width: 1024px) {
+  .icon-desc .hardware {
+    width: 18%;
+  }
+}
+
 .icon-desc .software {
   float: right;
   width: 68%;
+}
+
+@media (max-width: 1024px) {
+  .icon-desc .software {
+    width: 66%;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-desc .icon-item-box-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-desc .icon-item-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-desc .icon-item-box .title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
 }
 
 .icon-desc .icon-item {
@@ -534,7 +592,7 @@ i {
 
 @media (max-width: 768px) {
   .icon-desc .icon-item {
-    width: 36%;
+    width: 48%;
   }
 }
 
@@ -546,7 +604,8 @@ i {
 
 @media (max-width: 1024px) {
   .icon-desc .icon-img {
-    width: 16px;
+    margin-bottom: 0px;
+    width: 24px;
   }
 }
 
@@ -560,10 +619,34 @@ i {
 .icon-desc .icon-info {
   display: inline-block;
   color: rgba(255, 255, 255, 0.54);
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  .icon-desc .icon-info {
+    font-size: .9em;
+  }
 }
 
 .software .icon-item {
   width: 16%;
+}
+
+@media (max-width: 1440px) {
+  .software .icon-item {
+    width: 24%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .software .icon-item {
+    width: 32%;
+  }
+}
+
+@media (max-width: 768px) {
+  .software .icon-item {
+    width: 48%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

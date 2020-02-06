@@ -458,9 +458,23 @@ i {
   background: $color-black54;
   box-shadow: 0 -2px 6px $color-black24;
 
+  @media (max-width: $screen-sm) {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background: #092131;
+    box-shadow: 0 -4px 8px $color-black32;
+  }
+
   h3 {
     font-size: 1.1em;
     color: $color-white70;
+
+    @media (max-width: $screen-xs) {
+      padding-bottom: 16px;
+    }
   }
   .title {
     margin-top: 24px;
@@ -475,19 +489,52 @@ i {
   .hardware {
     float: left;
     width: 16%;
+
+    @media (max-width: $screen-md) {
+      width: 18%;
+    }
   }
   .software {
     float: right;
     width: 68%;
+
+    @media (max-width: $screen-md) {
+      width: 66%;
+    }
+  }
+
+  .icon-item-box-container {
+
+    @media (max-width: $screen-sm) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .icon-item-box {
+    
+    @media (max-width: $screen-sm) {
+      // border: 1px solid green;
+      width: 100%;
+    }
+
+    .title {
+
+      @media (max-width: $screen-xs) {
+        margin-top: 12px;
+        margin-bottom: 8px;
+      }
+    }
   }
 
   .icon-item {
+    // border: 1px solid blue;
     display: inline-block;
     width: 100%;
     margin-bottom: 8px;
 
     @media (max-width: $screen-sm) {
-      width: 36%;
+      width: 48%;
     }
   }
   .icon-img {
@@ -496,7 +543,8 @@ i {
     margin-bottom: 4px;
 
     @media (max-width: $screen-md) {
-      width: 16px;
+      margin-bottom: 0px;
+      width: 24px;
     }
     @media (max-width: $screen-sm) {
       margin-bottom: 2px;
@@ -506,7 +554,11 @@ i {
   .icon-info {
     display: inline-block;
     color: $color-white54;
-    vertical-align: top;
+    vertical-align: middle;
+
+    @media (max-width: $screen-md) {
+      font-size: .9em;
+    }
   }
 }
 
@@ -514,5 +566,16 @@ i {
 
   .icon-item {
     width: 16%;
+
+    @media (max-width: $screen-xlg) {
+      width: 24%;
+    }
+    @media (max-width: $screen-md) {
+      width: 32%;
+    }
+    @media (max-width: $screen-sm) {
+      // border: 1px solid red;
+      width: 48%;
+    }
   }
 }
