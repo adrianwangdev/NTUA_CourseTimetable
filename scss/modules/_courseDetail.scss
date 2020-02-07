@@ -1,0 +1,81 @@
+.course-detail {
+  display: flex;
+  color: $color-white87;
+
+  .course-detial-side {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $color-white12;
+    width: 100%;
+    background: $color-white12;
+
+    &.side-classroom {
+      flex-direction: row;
+      background: transparent;
+      
+      @media (max-width: $screen-sm) {
+        display: flex;
+        flex-basis: 24%;
+      }
+      @media (max-width: $screen-xs) {
+        flex-basis: 48%;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+
+    &.mobileShow {
+
+      @media (max-width: $screen-sm) {
+        display: flex;
+        border: 0;
+      }
+    }
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .course-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 16px;
+    text-align: right;
+    
+    p {
+      margin: 16px 0;
+      padding-top: 4px;
+      height: 56px;
+      font-size: 2em;
+    }
+  }
+
+  .course-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .time {
+      margin: 16px 0;
+      height: 56px;
+      text-align: center;
+      font-size: .8em;
+    }
+  }
+  
+}
+
+.mouse-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: $color-line;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+}

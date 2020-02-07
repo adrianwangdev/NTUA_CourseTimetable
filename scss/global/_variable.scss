@@ -6,8 +6,6 @@ $color-CTA-hoevr: #EE7700;
 $color-btn-footer: #FFE5B2;
 $color-line: #EC4166;
 
-$color-headerBG: rgba(255, 255, 255, .87);
-$color-sectionBG: rgba(104, 134, 169, .08);
 $color-black6: rgba(0, 0, 0, .06);
 $color-black12: rgba(0, 0, 0, .12);
 $color-black24: rgba(0, 0, 0, .24);
@@ -20,19 +18,6 @@ $color-white54: rgba(255, 255, 255, .54);
 $color-white70: rgba(255, 255, 255, .70);
 $color-white87: rgba(255, 255, 255, .87);
 
-/* --- Shadow System --- */
-$shadow-sm: 0 4px 8px rgba(0, 0, 0, .12);
-$shadow-lg: 0 6px 12px rgba(0, 0, 0, .12);
-
-/* --- Type System --- */
-$text-16px: .85em;
-$text-18px: .95em;
-$text-20px: 1.1em;
-$text-24px: 1.27em;
-$text-28px: 1.48em;
-$text-52px: 2.6em;
-$text-56px: 3em;
-
 /* --- Screen Break Point --- */
 $screen-xs: 480px;
 $screen-sm: 768px;
@@ -40,5 +25,5 @@ $screen-md: 1024px;
 $screen-lg: 1200px;
 $screen-xlg: 1440px;
 
-/* -------------------------- */
+/* --- Lesson Height --- */
 $lesson-height: 88px;

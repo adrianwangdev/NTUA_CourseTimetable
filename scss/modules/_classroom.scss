@@ -1,0 +1,90 @@
+.classroom-title {
+  display: flex;
+  border-bottom: 1px solid $color-white12;
+  color: $color-white70;
+  background: $color-black54;
+
+  .classroom {
+    padding: 8px;
+    border-right: 1px solid $color-white12;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid $color-white12;
+    }
+
+    &.classroom-first {
+      align-self: center;
+      border-right: none;
+
+      @media (max-width: $screen-sm) {
+        flex-basis: 24%;
+      }
+      @media (max-width: $screen-xs) {
+        flex-basis: 36%;
+      }
+    }
+
+    &.software {
+      text-align: left;
+
+      &.mobileShow {
+        @media (max-width: $screen-sm) {
+          padding-right: 40px;
+        }
+      }
+    }
+
+    &.mobileShow {
+
+      @media (max-width: $screen-sm) {
+        display: block;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+
+    p, span, .app-icon {
+      display: inline-block;
+    }
+
+    p, span {
+      vertical-align: middle;
+    }
+
+    span {
+      font-size: .8em;
+    }
+    
+    .app-icon {
+      width: 28px;
+      margin-bottom: 4px;
+
+      @media (max-width: $screen-md) {
+        width: 16px;
+      }
+      @media (max-width: $screen-sm) {
+        margin-bottom: 2px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+.date-title {
+  display: flex;
+  color: $color-white87;
+
+  time.date {
+    padding: 4px 0 4px 16px;
+  }
+
+  p {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,28 @@
+.owl-carousel {
+  // for owl-dots
+  text-align: center;
+}
+
+.owl-dots {
+  bottom: 32px;
+
+  button.owl-dot {
+    
+    display: inline-block;
+    margin: 4px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: $color-white32;
+
+    @media (max-width: $screen-xs) {
+      width: 8px;
+      height: 8px;
+    }
+    
+    &.active {
+      background: white;
+    }
+  }
+}
