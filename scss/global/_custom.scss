@@ -226,6 +226,12 @@ i {
 
     &.software {
       text-align: left;
+
+      &.mobileShow {
+        @media (max-width: $screen-sm) {
+          padding-right: 40px;
+        }
+      }
     }
 
     &.mobileShow {
@@ -265,8 +271,6 @@ i {
 }
 
 
-
-
 .date-title {
   display: flex;
   color: $color-white87;
@@ -279,8 +283,6 @@ i {
     display: inline-block;
   }
 }
-
-
 
 
 .course-detail {
@@ -441,9 +443,17 @@ i {
 
 .prevClassroom {
   left: 16px;
+
+  @media (max-width: $screen-xs) {
+    left: 8px;
+  }
 }
 .nextClassroom, .softwareHelp {
   right: 16px;
+
+  @media (max-width: $screen-xs) {
+    right: 8px;
+  }
 }
 .softwareHelp {
   font-size: 1.2em;
@@ -457,15 +467,20 @@ i {
   padding: 0 32px;
   background: $color-black54;
   box-shadow: 0 -2px 6px $color-black24;
+  transition: all .6s;
 
   @media (max-width: $screen-sm) {
     position: fixed;
     left: 0;
-    bottom: 0;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     background: #092131;
     box-shadow: 0 -4px 8px $color-black32;
+  }
+  @media (max-width: $screen-xs) {
+    padding: 8px 24px 32px 24px;
+    height: 56vh;
+    overflow: scroll;
   }
 
   h3 {
@@ -519,6 +534,7 @@ i {
     }
 
     .title {
+      color: #f3a0ab;
 
       @media (max-width: $screen-xs) {
         margin-top: 12px;
@@ -548,7 +564,10 @@ i {
     }
     @media (max-width: $screen-sm) {
       margin-bottom: 2px;
-      width: 24px;
+    }
+    @media (max-width: $screen-xs) {
+      margin-bottom: 2px;
+      width: 20px;
     }
   }
   .icon-info {
@@ -577,5 +596,22 @@ i {
       // border: 1px solid red;
       width: 48%;
     }
+  }
+}
+
+.close-btn {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    color: $color-white70;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  @media (max-width: $screen-xs) {
+    top: 26px;
   }
 }
